@@ -1,4 +1,4 @@
-package routers
+package initialize
 
 import (
 	"fmt"
@@ -7,7 +7,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 )
-
 
 func AA() gin.HandlerFunc {
   return func(ctx *gin.Context) {
@@ -32,7 +31,7 @@ func CC(ctx *gin.Context) {
 }
 
 
-func NewRouter() *gin.Engine {
+func InitRouter() *gin.Engine {
   r := gin.Default()
 
   v1 := r.Group("/api/v1")

@@ -1,10 +1,11 @@
 server:
   port: 8082
-databases:
-  user: admin
-  password: admin
-  host: localhost
-  dbName: dinhDev
-security:
-  jwt:
-    key: 123
+muysql:
+  host: 127.0.0.1
+  port: 33306
+  username: root
+  password: root1234
+  dbname: dinhdevgo
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxlifetime: 3600
